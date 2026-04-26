@@ -2,6 +2,7 @@ body {
   font-family: var(--font-circe-bold);
   color: #fff;
   line-height: 1.1;
+    background: #160201!important;
 
   &.active {
     overflow: hidden;
@@ -12,4 +13,8 @@ main {
   max-width: 100%;
   width: 100%;
   overflow: hidden;
+
+}
+section{
+  background: #16020100!important;
 }

@@ -2,10 +2,13 @@
 
 
 .promo {
+
   background: radial-gradient(circle, #411B10 0%, #160201 100%);
   padding-top: fluid-360(60, 115);
 
   &__container {
+    margin-bottom: 40px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;

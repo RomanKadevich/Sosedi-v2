@@ -1,26 +1,27 @@
 @use '../../helpers/function' as *;
 
 
-.faq {
-  position: relative;
-  z-index: 1;
-  padding-top: fluid-1024(100, 150);
-  background: radial-gradient(circle, #411B10 0%, #160201 100%);
+// .faq {
+//   position: relative;
+//   z-index: 1;
+//   padding-top: fluid-1024(100, 150);
+//   background: radial-gradient(circle, #411B10 0%, #160201 100%);
 
-  &::before {
-    position: absolute;
-    content: "";
-    bottom: -50%;
-    right: 0;
-    width: fluid-1024(150, 250);
-    height: 100%;
-    z-index: -1;
-    background: url("../../../public/globals/Elipse2.png");
-    background-repeat: no-repeat;
-  }
-}
+// //   &::before {
+// //     position: absolute;
+// //     content: "";
+// //     bottom: -50%;
+// //     right: 0;
+// //     width: fluid-1024(150, 250);
+// //     height: 100%;
+// //     z-index: -1;
+// //     background: url("../../../public/globals/Elipse2.png");
+// //     background-repeat: no-repeat;
+// //   }
+// }
 
 .faq__content {
+   z-index: 4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,7 +97,9 @@
   font-weight: 400;
   font-size: fluid-360(13, 20);
 }
-
+.faq__card-text a{
+  text-decoration: underline!important;
+}
 input[type="radio"] {
   display: none;
 }

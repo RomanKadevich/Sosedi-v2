@@ -2,9 +2,9 @@
 
 .how-to {
   position: relative;
-  z-index: 1;
+  z-index: 6;
   padding-top: fluid-1024(70, 110);
-  background: radial-gradient(circle, #411B10 0%, #160201 100%);
+  background:#2F1B14;
 
   &::before {
     content: '';
@@ -22,9 +22,7 @@
     place-items: center;
   }
 
-  &__title {
-
-  }
+ 
 
   &__steps {
     margin-top: fluid-1024(30, 50);
@@ -40,7 +38,7 @@
     width: 320px;
     border-radius: 50px;
     align-items: center;
-    padding: 18px 40px;
+  padding: 18px 40px 16px 40px;
     margin-top: fluid-1024(50, 70);
     text-align: center;
     color: #f2d3ac !important;
@@ -73,7 +71,10 @@
     width: fluid-1024(278, 421);
     position: absolute;
     content: "";
-    background-image: url("../../../public/how-to/number_1.webp");
+    
+    background-image: url("../../../public/how-to/number_1_1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
   }
 
   &--two::before {

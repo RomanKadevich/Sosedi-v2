@@ -90,7 +90,7 @@
     width: 248px;
     height: 56px;
 
-    padding: 16px 24px;
+    padding: 16px 24px 14px 24px;
     border: 1px solid #d6b37c;
     border-radius: 50px;
 
@@ -189,7 +189,16 @@
   }
 }
 
-@media screen and (max-width: 1489px) {
+@media (max-width: 1550px)  and (min-width: 1270px) {
+li a, .header__account-text{
+  font-size: 11px!important;
+}
+.header__actions {
+
+    gap: 20px;
+}
+}
+@media screen and (max-width: 1269px) {
   .header {
     &__nav {
       display: none;

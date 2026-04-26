@@ -1,28 +1,45 @@
 @use '../../helpers/function' as *;
 
-.prizes {
-  display: grid;
-  place-items: center;
-  padding-top: fluid-1024(100, 152);
-  position: relative;
-  z-index: 2;
-  background: radial-gradient(circle, #411B10 0%, #160201 100%);
-
-  &::before {
-    content: "";
+.decor{
+   
     position: absolute; /* вот тут залезаем вверх */
     left: 0;
     width: 100%;
     height: 300%;
 
-    background: url("../../../public/globals/bgr.png");
+    background: url("../../../public/globals/bgr.webp");
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: -1;
+   z-index: 3;
   }
+.prizes {
+  display: grid;
+  place-items: center;
+  padding-top: fluid-1024(100, 152);
+  position: relative;
+    z-index: 5;
+
+
+  overflow: visible; /* важно */
+
+
+  // &::before {
+  //   content: "";
+  //   position: absolute; /* вот тут залезаем вверх */
+  //   left: 0;
+  //   width: 100%;
+  //   height: 300%;
+
+  //   background: url("../../../public/globals/bgr.png");
+  //   background-position: right;
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //  z-index: 1;
+  // }
 
   &__grid {
+      z-index: 3;
     flex-wrap: wrap;
     margin-top: fluid-1024(30, 55);
     display: flex;
@@ -110,7 +127,17 @@
     height: 100%;
   }
 }
+@media (min-width: 1276px) and (max-width: 1331px) {
+.prizes__grid {
+  gap:20px
+  }
+}
 
+@media (min-width: 1276px) and (max-width: 1700px) {
+.prize-card {
+    width: 300px;
+  }
+}
 @media screen and (max-width: 1023px) {
   .prizes {
     padding-top: fluid-360(60, 100);
