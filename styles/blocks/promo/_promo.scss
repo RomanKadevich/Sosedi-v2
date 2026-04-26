@@ -26,12 +26,14 @@
     max-width: fluid-1024(945, 1080);
   }
 
+  
   &__text {
+            line-height: 1.6;
     font-family: "Circe-Regular", sans-serif;
     font-size: fluid-1024(15, 16);
     text-align: center;
 
-    span {
+    &__title {
       text-transform: uppercase;
       font-family: "Circe-Bold", sans-serif;
     }

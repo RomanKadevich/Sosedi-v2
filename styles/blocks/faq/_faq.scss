@@ -115,9 +115,12 @@
   margin-top: 20px;
   font-weight: 400;
   font-size: fluid-360(13, 20);
+    line-height: 1.4;
+
 }
 .faq__card-text a{
   text-decoration: underline!important;
+  
 }
 input[type="radio"] {
   display: none;
