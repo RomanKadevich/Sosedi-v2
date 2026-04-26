@@ -2,7 +2,7 @@
 
 .results {
   position: relative;
-  z-index: 2;
+  z-index: 4;
   background: radial-gradient(circle, #411B10 0%, #160201 100%);
 
   &::before {
@@ -13,7 +13,7 @@
     width: 100%;
     height: fluid-1024(800, 1270);
     z-index: -10;
-    background: url("../../../public/globals/bgr4.png");
+    background: url("../../../public/globals/bgr4.webp");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: cover;
@@ -27,6 +27,7 @@
     padding: fluid-360(20, 34) 0;
     display: flex;
     justify-content: center;
+   
 
     max-width: fluid-1024(974, 1580);
   }
@@ -35,7 +36,7 @@
 
   &__text {
     line-height: 1.4;
-    text-decoration: underline;
+    text-decoration: underline!important;
     font-size: fluid-1024(22, 28);
   }
 }
