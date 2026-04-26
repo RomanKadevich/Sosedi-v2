@@ -114,7 +114,7 @@
     color: #22120b;
     font-size: fluid-360(13, 18);
     border-radius: 50px;
-
+  
     &--active {
       width: max-content;
       display: none;
@@ -186,6 +186,9 @@
     text-transform: uppercase;
     padding: 12px 30px;
     font-size: fluid-1024(16, 22);
+      &--disable{
+      cursor:default;
+    }
   }
 }
 

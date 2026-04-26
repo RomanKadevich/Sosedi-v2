@@ -22,11 +22,13 @@
     display: block;
 
     &--jardin img {
+      object-fit: contain;
       width: fluid-1024(90, 98);
       height: fluid-1024(50, 55);
     }
 
     &--greenfield img {
+       object-fit: contain;
       width: fluid-1024(136, 143);
       height: fluid-1024(31, 33);
     }
@@ -42,7 +44,7 @@
     gap: 97px;
     overflow: hidden;
     position: absolute;
-    background: url("../../../public/header/background.png");
+    background: url("../../../public/header/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -122,8 +124,9 @@
     display: flex;
 
     &--sosedi {
-      width: fluid-360(80, 126);
-      height: fluid-360(16, 26);
+       object-fit: contain;
+      width: fluid-360(100, 136);
+      height: fluid-360(30, 26);
     }
   }
 }
@@ -257,7 +260,7 @@ li a, .header__account-text{
     &__partners {
       &-icon {
         &--sosedi {
-          margin-right: 45px;
+          margin-right: 60px;
         }
       }
     }

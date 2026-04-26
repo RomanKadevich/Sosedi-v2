@@ -33,38 +33,55 @@
   gap: fluid-360(10, 18);
   margin-top: fluid-360(25, 50);
 }
-
+.faq__card-body label {
+  display: block;
+      // padding: 20px 60px 20px 20px;
+       padding: fluid-360(16, 30) fluid-360(16, 40);
+}
 .faq__card-body {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  display: block;
+
+  // min-height: fluid-1024(82, 91);
   background: rgba(33, 20, 15, 0.9);
   position: relative;
-  border-radius: fluid-360(16, 30);
-  padding: fluid-360(16, 30) fluid-360(16, 40);
+  // border-radius: fluid-360(16, 30);
+   border-radius: 20px;
+  border: 1px solid transparent;
+
+  background:
+    linear-gradient(rgba(33, 20, 15, 0.9), rgba(33, 20, 15, 0.9)) padding-box,
+    linear-gradient(135deg, #FAE5B6, #F1C17E) border-box;
+//  padding: fluid-360(16, 30) fluid-360(16, 40);
+  // padding-right: 60px; /* 
   width: fluid-1024(975, 1580);
-  height: fluid-1024(82, 91);
+  // height: fluid-1024(82, 91);
+  // min-height: fluid-1024(82, 91);
+  height: auto;
+  align-items: flex-start; /* важно */
 
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    padding: 1px; // толщина бордера
-    border-radius: inherit;
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   inset: 0;
+  //   padding: 1px; // толщина бордера
+  //   border-radius: inherit;
 
-    background: linear-gradient(
-                    135deg,
-                    #FAE5B6 0%,
-                    #F1C17E 100%
-    );
+  //   background: linear-gradient(
+  //                   135deg,
+  //                   #FAE5B6 0%,
+  //                   #F1C17E 100%
+  //   );
 
-    -webkit-mask:
-            linear-gradient(#000 0 0) content-box,
-            linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
+  //   -webkit-mask:
+  //           linear-gradient(#000 0 0) content-box,
+  //           linear-gradient(#000 0 0);
+  //   -webkit-mask-composite: xor;
+  //   mask-composite: exclude;
 
-    pointer-events: none;
-  }
+  //   pointer-events: none;
+  // }
 
   label {
     width: 100%;
@@ -82,12 +99,14 @@
   right: fluid-360(16, 40);
   top: fluid-360(28, 40);
   pointer-events: none;
+    transition: transform 0.3s ease;
 }
 
 .faq__card-title {
   font-weight: 700;
   font-size: fluid-1024(20, 28);
   text-transform: uppercase;
+    // margin-bottom: 10px;
 }
 
 .faq__card-text {
@@ -109,6 +128,7 @@ input[type="radio"] {
 }
 
 .faq__card-body:has(input[type="radio"]:checked) .faq__card-arrow {
+    transform: rotate(180deg);
   //background-image: url("./images/arrow-dark.svg");
 }
 
@@ -137,4 +157,8 @@ input[type="radio"] {
   .faq::before {
     background: none;
   }
+  .faq__card-body label {
+    padding-right: 60px; 
+  }
+
 }
