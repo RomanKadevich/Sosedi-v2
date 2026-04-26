@@ -58,61 +58,76 @@
 .step-item {
   position: relative;
   display: flex;
-  width: fluid-1024(278, 500);
-  height: fluid-1024(157, 238);
+  width: fluid-1024(300, 700);
+  height: fluid-1024(200, 300);
+  padding: 20px 0px 30px 130px;
 
-  img {
-    object-fit: cover;
-  }
 
-  &--one::before {
-    height: 100%;
-        left: fluid-1024(110, 80);
-    width: fluid-1024(320, 485);
-    position: absolute;
-    content: "";
-    
-    background-image: url("../../../public/how-to/number_1_1.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-  }
-
-  &--two::before {
-    height: 100%;
-    left: 6px;
-    width: fluid-1024(320, 485);
-    position: absolute;
-    content: "";
-    background-image: url("../../../public/how-to/number_2.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  &--three::before {
-    height: 100%;
-    left: fluid-1024(53, 80);
-    width: fluid-1024(320, 485);
-    position: absolute;
-    content: "";
-    background-image: url("../../../public/how-to/number_3.webp");
-    background-repeat: no-repeat;
+  &--one{
+    background: url("../../../public/how-to/1.png");
     background-size: contain;
+    background-repeat: no-repeat;
+   background-position: calc(50% + 40px) calc( 10px) ;}
+   &--two{
+    background: url("../../../public/how-to/2.png");
+  background-size: contain;
+    background-repeat: no-repeat;
   }
-
-  &__number {
-    flex-shrink: 0;
-    position: relative;
-    z-index: 2;
-
-    img {
-      height: 100%;
-    }
+   &--three{
+    background: url("../../../public/how-to/3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
   }
+  
+
+  // &--one::before {
+  //   height: 100%;
+  //       left: fluid-1024(110, 80);
+  //   width: fluid-1024(320, 485);
+  //   position: absolute;
+  //   content: "";
+    
+  //   background-image: url("../../../public/how-to/number_1_1.png");
+  //       background-repeat: no-repeat;
+  //       background-size: cover;
+  // }
+
+  // &--two::before {
+  //   height: 100%;
+  //   left: 6px;
+  //   width: fluid-1024(320, 485);
+  //   position: absolute;
+  //   content: "";
+  //   background-image: url("../../../public/how-to/number_2.webp");
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  // }
+
+  // &--three::before {
+  //   height: 100%;
+  //   left: fluid-1024(53, 80);
+  //   width: fluid-1024(320, 485);
+  //   position: absolute;
+  //   content: "";
+  //   background-image: url("../../../public/how-to/number_3.webp");
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  // }
+
+  // &__number {
+  //   flex-shrink: 0;
+  //   position: relative;
+  //   z-index: 2;
+
+  //   img {
+  //     height: 100%;
+  //   }
+  // }
 
   &__content {
     position: relative;
     margin-left: fluid-1024(32, 60);
-    padding-top: fluid-1024(12, 10);
+    // padding-top: fluid-1024(12, 10);
   }
 
   &__icon-wrapper {
@@ -173,34 +188,3 @@
   }
 }
 
-@media screen and (min-width: 1600px) {
-
-
-.step-item {
-
-
-
-
-  &--one::before {
-
-        left: 150px;
- 
-
-}}}
-@media (max-width: 1599px) and (min-width: 1398px) {
-
-
-.step-item {
-
-
-
-
-  &--one::before {
-
-        left: 120px;
- 
-
-}}
-
-
-}
