@@ -111,7 +111,8 @@
 
   &__content {
     position: relative;
-    margin-left: fluid-1024(32, 60);
+    // margin-left: fluid-1024(32, 60);
+        margin-left: 60px;
     padding-top: fluid-1024(12, 10);
   }
 
@@ -163,10 +164,13 @@
       gap: 31px;
     }
   }
-
-  // .step-item__content--first {
-  //   margin-left: 90px;
-  // }
+  .step-item__content{
+ margin-left: 40px;
+  }
+  .step-item__content--first {
+     
+    margin-left: 100px;
+  }
 
   .step-item__icon-wrapper {
     display: none;
