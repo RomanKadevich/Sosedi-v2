@@ -157,6 +157,9 @@
 
   // КНОПКА
   &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: fluid-1024(60, 94);
     border-radius: 51px;
     width: fluid-1024(274, 315);
@@ -168,7 +171,7 @@
     background: linear-gradient(90deg, #f6dbb6 0%, #d8a069 100%);
     transition: background .3s ease-in-out;
 
-    a {
+    span {
       background: linear-gradient(180deg, #22120b 0%, #88482c 100%);
       background-clip: text;
       -webkit-background-clip: text;
