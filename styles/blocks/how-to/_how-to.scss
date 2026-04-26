@@ -58,23 +58,23 @@
 .step-item {
   position: relative;
   display: flex;
-  width: fluid-1024(300, 700);
+  width: fluid-1024(300, 500);
   height: fluid-1024(200, 300);
   padding: 20px 0px 30px 130px;
 
 
   &--one{
-    background: url("../../../public/how-to/1.png");
+    background: url("../../../public/how-to/1-1.png");
     background-size: contain;
     background-repeat: no-repeat;
    background-position: calc(50% + 40px) calc( 10px) ;}
    &--two{
-    background: url("../../../public/how-to/2.png");
+    background: url("../../../public/how-to/1-2.png");
   background-size: contain;
     background-repeat: no-repeat;
   }
    &--three{
-    background: url("../../../public/how-to/3.png");
+    background: url("../../../public/how-to/1-3.png");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -175,7 +175,7 @@
     &__steps {
       padding-right: 40px;
       flex-direction: column;
-      gap: 31px;
+      gap: 0px;
     }
   }
 
