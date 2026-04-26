@@ -16,8 +16,23 @@ burger.addEventListener('click', () => {
 });
 
 
-document.querySelectorAll('.header__item').forEach(link => {
-  link.addEventListener('click', () => {
+document.querySelectorAll('.header__item a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const id = this.getAttribute('href');
+    const target = document.querySelector(id);
+
+    const offset = 100; // высота header
+
+    const top = target.offsetTop - offset;
+
+    window.scrollTo({
+      top,
+      behavior: 'smooth'
+    });
+
+    // закрытие меню
     body.classList.remove('active');
     burger.classList.remove('active');
     nav.classList.remove('active');
