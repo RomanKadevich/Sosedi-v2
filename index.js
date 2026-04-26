@@ -14,3 +14,15 @@ burger.addEventListener('click', () => {
     heroBtn.classList.toggle('active');
     headerAccount.classList.toggle('active');
 });
+
+
+document.querySelectorAll('.header__item').forEach(link => {
+  link.addEventListener('click', () => {
+    body.classList.remove('active');
+    burger.classList.remove('active');
+    nav.classList.remove('active');
+    menu.classList.remove('active');
+    heroBtn.classList.remove('active');
+    headerAccount.classList.remove('active');
+  });
+});
