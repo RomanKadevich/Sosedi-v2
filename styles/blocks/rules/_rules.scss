@@ -127,18 +127,6 @@
     gap: 20px;
   }
 
-  &__product {
-
-    //&--coffee {
-    //  width: fluid-1024(284, 287);
-    //  height: fluid-1024(265, 347);
-    //}
-    //
-    //&--tea {
-    //  width: fluid-1024(276, 361);
-    //  height: fluid-1024(258, 338);
-    //}
-  }
 
   &__main-draw {
     display: flex;
@@ -175,6 +163,7 @@
   }
 
   &__date {
+    max-width: 300px;
     width: max-content;
     display: flex;
     align-items: center;
@@ -211,17 +200,7 @@
       padding-top: fluid-360(30, 50);
       padding-bottom: fluid-360(30, 50);
     }
-    &__product {
-      //&--coffee {
-      //  width: fluid-360(225, 284);
-      //  height: fluid-360(210, 265);
-      //}
-      //
-      //&--tea {
-      //  width: fluid-360(225, 276);
-      //  height: fluid-360(210, 258);
-      //}
-    }
+   
 
     &__step-text {
       font-size: fluid-360(14, 16);
